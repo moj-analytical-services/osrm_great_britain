@@ -1,6 +1,6 @@
 FROM osrm/osrm-backend
 
-RUN wget http://download.geofabrik.de/europe/great-britain/great-britain-latest.osm.pbf
+RUN wget http://download.geofabrik.de/europe/great-britain-latest.osm.pbf
 
 RUN osrm-extract -p /opt/car.lua great-britain-latest.osm.pbf
 RUN osrm-partition great-britain-latest.osrm

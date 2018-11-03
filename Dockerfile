@@ -7,4 +7,4 @@ RUN osrm-partition great-britain-latest.osrm
 RUN osrm-customize great-britain-latest.osrm
 
 # Start the server
-CMD osrm-routed --port 80 --algorithm mld --max-table-size=20000  great-britain-latest.osrm
+CMD osrm-routed --port 80 --algorithm mld --max-table-size 20000  great-britain-latest.osrm
